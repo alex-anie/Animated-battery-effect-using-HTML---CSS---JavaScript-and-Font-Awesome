@@ -1,0 +1,139 @@
+@import "asset/css/all.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: brown;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-body {
+  width: 200px;
+  height: 400px;
+
+  background: linear-gradient(
+    180deg,
+    orange 30%,
+    purple 5%,
+    rgb(233, 105, 19) 70%
+  );
+
+  border-radius: 20px;
+  padding: 15px;
+
+  box-shadow: 0 10px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Flash-light and camera */
+.camera-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.flash-light {
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: purple;
+  border-radius: 50%;
+}
+
+.camera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+  border: 3px purple solid; 
+
+  margin-left: 5px;
+}
+
+.camera-spot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+
+  background-color: purple;
+
+  border-radius: 50%;
+}
+
+/* SCREEN */
+.screen {
+  width: 100%;
+  height: 300px;
+
+  /* background-color: rgb(151, 100, 5); */
+  background: linear-gradient(180deg, brown 30%, purple 70%);
+
+  margin-top: 1rem;
+
+  display: flex;
+  /*justify-content: center;*/
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BATTER-WRAPPER */
+.battery-wrapper {
+  position: relative;
+  top: 6em;
+}
+
+/*font-Awesome Style*/
+.fas {
+  color: #fff;
+  font-size: 6em;
+  transform: rotate(-90deg);
+}
+/* BUTTON */
+.button {
+  width: 3em;
+  height: 1em;
+
+  border: 2px solid purple;
+  border-radius: 1em;
+
+  margin: 1em auto auto auto;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+
+/* inserted-text */
+.inserted-text {
+  position: relative;
+  top: 10em;
+  left: 0.5em;
+
+  z-index: 2;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: #fff;
+}
+
+

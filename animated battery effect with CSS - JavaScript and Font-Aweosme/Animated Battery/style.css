@@ -1,0 +1,116 @@
+@import "asset/css/all.css";
+
+body {
+  background-color: brown;
+}
+
+.conatainer main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-body {
+  background: linear-gradient(
+    180deg,
+    orange 30%,
+    purple 5%,
+    rgb(233, 105, 19) 70%
+  );
+
+  width: 200px;
+  height: 400px;
+
+  border-radius: 20px;
+  box-shadow: 0 10px 8px 8px rgba(0, 0, 0, 0.3);
+
+  padding: 15px;
+}
+
+/* Flash-light */
+.flash-light {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+  background-color: purple;
+}
+
+.camera-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.camera {
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+  border: 3px solid purple;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 5px;
+}
+
+.camera-spot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: purple;
+}
+
+.screen {
+  width: 100%;
+  height: 300px;
+
+  background: linear-gradient(180deg, brown 30%, purple 70%);
+
+  margin-top: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.battery-wrapper {
+  position: relative;
+  top: 6em;
+}
+
+.fas {
+  color: #fff;
+  font-size: 6em;
+  transform: rotate(-90deg);
+}
+
+.inserted-text {
+  color: #fff;
+  position: relative;
+  top: 5em;
+  left: 2em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.button {
+  width: 3em;
+  height: 1em;
+
+  border: 3px solid purple;
+  border-radius: 10px;
+
+  margin: 1em auto auto auto;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fff;
+}
